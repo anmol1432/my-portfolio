@@ -78,15 +78,15 @@ font-size: 1.6rem;
 #project-container .card img{
      height:20vh;
      width: 100%;
-     margin-bottom: 20px;
+     margin-bottom: 10px;
 
 }
 #project-container .card .card-btn{
     display: flex;
 }
 #project-container .card button{
-     height: 10%;
-     width: 70%;
+    height: 10%;
+    width: 70%;
     margin-bottom: 5px;
     margin-left: 10px;
     margin-right: 10px;
