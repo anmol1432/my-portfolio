@@ -2,7 +2,6 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-     /* background-color: rgb(86, 34, 134); */
 }
 
 body{
@@ -10,66 +9,88 @@ body{
     cursor: pointer;
 }
 /* navbar start */
-
 #navbarNavDropdown ul li{
 background-color: rgb(255, 255, 255);
 font-size: 1.6rem;
 }
-
 .navbar-nav{
     margin-left: auto;
 }
-/* bg */
-.cntainer{
-    position: relative;
+/* after nav bg */
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
     text-align: center;
+    width: 100vw;
+    overflow: hidden!important;
 }
-.bg-img{
-    width: 100%;
-    height:40vh;
+#bg-img{
+    width: 99vw;
+    height: 35vh;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+.inner{
+    position: absolute;
+    color: white;
+    margin-left: 550px;
+}
 .bg-text{
-   position: absolute;
-   top:40%;
-   left:35%;
-   transform: translate(50% 50%);
-   color: #fffdfd;
-   font-size: 2.5rem;
-   animation: text 3s ease 1s 3;
-}
-
-.resume-btn{
-   position: absolute;
-   top:70%;
-   left: 43%;
-   font-size:1.5rem;
-}
-.resume-btn button{
-    padding: 10px 20px;
-    border-radius: 50px;
+    font-size: 2.5rem;
+    text-shadow: 1px 3px 3px #e21c1c;
+    animation: text 2s ease-in 5;
 }
 @keyframes text{
-         0% {
-            letter-spacing: 25px;
-            }
-            25% {
-
-              letter-spacing: 20px;
-            }
-
-            75% {
-                letter-spacing: 15px;
-            }
-
-            100% {
-           letter-spacing: 10px;
-            }
+    0%{transform: scale(0.8,0.8);}
+    25%{transform: scale(0.9,0.9);}
+    50%{transform: scale(0.8,0.8);}
+    75%{transform: scale(0.9,0.9);}
+    100%{transform: scale(0.8,0.8);}
+}
+.resume-btn{
+    background-color: #f32562;
+    color: white;
+    padding: 10px;
+    text-decoration: none!important;
+}
+.resume-btn:hover{
+    color: #f3e1e4;
+    background-color: transparent;
+    border: 2px solid  #e41530;
+}
+/* after nav bg  end */
+/* projects section start */
+#project-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-evenly;
 }
 
+#project-container .card{
+    margin: 10px;
+    width: 20%;
+    height: 20%;
+}
+#project-container .card img{
+     height:20vh;
+     width: 100%;
+     margin-bottom: 20px;
 
-
+}
+#project-container .card .card-btn{
+    display: flex;
+}
+#project-container .card button{
+     height: 10%;
+     width: 70%;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
 /* about us start */
 .about{
     display: block;
@@ -95,9 +116,8 @@ font-size: 1.6rem;
 
 
 /* contact */
-sendbtn.contact{
-       
-        padding: 20px;
+#sendbtn.contact{ 
+    padding: 20px;
     margin-bottom: 20px;
 }
 .group{
@@ -134,16 +154,15 @@ list-style: none;
 /* footer */
 
 /* hovers */
-svg:hover{
+.contact-link svg:hover{
     transform: scale(1.6);
     margin: 1px 5px;
     transition: all ease-out 0.3s;
 }
 
 
-
-/* for phone */
-@media screen and (max-width:427px){
+/* for phone 📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱📱 */
+@media screen and (max-width:500px){
 .navbar{
     width: 100vw;
     cursor: pointer;
@@ -158,32 +177,29 @@ svg:hover{
     background-color: rgb(248 249 250);
     color: black;
  }
-/* bg */
-.bg-text {
-    position: absolute;
-    top: 30%;
-    left: 4%;
-    transform: translate(50% 50%);
-    color: #ffffff;
-    font-size: 2rem;
+.inner{
+    margin-left: 0px;
 }
-.bg-img{
-    height: 30vh;
+/* bg end */
+/*  project */
+#project-container .card {
+    width: 40%;
+    height: 30%;
 }
-.resume-btn{
+#project-container .card .card-btn{
     display: block;
     margin: auto;
-    top: 70%;
-    left: 30%;
-    font-size: 1rem;
 }
-.resume-btn button{
-    padding: 10px 15px;
-    border: 1px solid white; 
-    border-radius: 50px;
+#project-container .card img{
+     height: 15vh;
 }
-
-/* bg end */
+#project-container .card button{
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+/*project end*/
  .about{
      width: 90%;
  }
