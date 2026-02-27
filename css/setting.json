@@ -1,0 +1,59 @@
+{
+    "html.format.indentHandlebars": true,
+    "html.format.indentInnerHtml": true,
+    "python.jediEnabled": false,
+    "extensions.ignoreRecommendations": true,
+    "kite.showWelcomeNotificationOnStartup": false,
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 300,
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "workbench.sideBar.location": "left",
+    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
+    "editor.fontLigatures": "",
+    "powermode.enabled": true,
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.python",
+    },
+    "python.autoComplete.addBrackets": true,
+    "html-css-class-completion.enableEmmetSupport": true,
+    "files.associations": {
+        "*.py": "python"
+    },
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "python.analysis.memory.keepLibraryLocalVariables": true,
+    "python.linting.pycodestyleEnabled": true,
+    "python.pythonPath": "C:\\py_projects\\jango_env\\Scripts\\python.exe",
+    "vsicons.dontShowNewVersionMessage": true,
+    "liveServer.settings.donotVerifyTags": true,
+    "liveSassCompile.settings.formats": [
+        // This is Default.
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": null
+        }
+    ],
+    "workbench.colorTheme": "Monokai Dimmed",
+    "git.ignoreWindowsGit27Warning": true,
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.startupEditor": "welcomePage",
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact",
+    },
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "html-css-class-completion.includeGlobPattern": "**/*.{css,html,js}",
+    "html-css-class-completion.JavaScriptLanguages": [
+        "javascript",
+        "javascriptreact",
+        "typescriptreact"
+    ],
+}
+//"python.pythonPath": "C:\\py_projects\\jango_env\\Scripts\\python.exe",
+// "python.pythonPath": "C:\\py_projects\\project_flask1\\Scripts\\python.exe",
+//  "python.pythonPath": "C:\\Users\\hp\\AppData\\Local\\Programs\\Python\\Python38\\python.exe",
