@@ -2,7 +2,7 @@ import { Anchor, Mail, MapPin } from "lucide-react";
 
 const ContactSection = () => {
   return (
-    <section id="contact" className="py-24 px-6 bg-ocean-gradient">
+    <section id="contact" className="py-24 px-6 bg-background">
       <div className="container mx-auto max-w-2xl text-center">
         <h2 className="font-display text-4xl md:text-5xl mb-4">
           Join My <span className="text-gradient-fire">Crew</span>
@@ -39,9 +39,9 @@ const ContactSection = () => {
           </form>
         </div>
 
-        <div className="flex items-center justify-center gap-6 mt-10 text-sm text-muted-foreground font-body">
-          <span className="flex items-center gap-1"><Mail className="h-4 w-4" /> hello@devvoyage.com</span>
-          <span className="flex items-center gap-1"><MapPin className="h-4 w-4" /> Grand Line</span>
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 mt-10 text-sm text-muted-foreground font-body">
+          <span className="flex items-center gap-1"><Mail className="h-4 w-4" /> anmol@example.com</span>
+          <span className="flex items-center gap-1"><MapPin className="h-4 w-4" /> Beas City, Amritsar, Punjab</span>
         </div>
       </div>
 
@@ -50,7 +50,7 @@ const ContactSection = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-muted-foreground font-body">
           <div className="flex items-center gap-2">
             <Anchor className="h-4 w-4 text-accent" />
-            <span className="font-display">DevVoyage</span>
+            <span className="font-display">Anmol Singh</span>
           </div>
           <p>© 2026 — Built with dreams and determination</p>
         </div>
