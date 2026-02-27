@@ -1,4 +1,4 @@
-import { Briefcase, Calendar } from "lucide-react";
+import { Briefcase, Calendar, ExternalLink } from "lucide-react";
 
 const experiences = [
   {
@@ -15,6 +15,7 @@ const experiences = [
     ],
     tech: ["React.js", "React Query", "Context API", "JavaScript", "HTML5 Canvas", "Paper.js"],
     color: "border-l-accent",
+    projectUrl: "https://vpop-pro.com/",
   },
   {
     role: "Frontend Developer",
@@ -30,6 +31,7 @@ const experiences = [
     ],
     tech: ["React.js", "Laravel", "Webpack", "FFmpeg", "Form.io"],
     color: "border-l-primary",
+    projectUrl: "https://igzy.com/",
   },
   {
     role: "Frontend Engineer",
@@ -43,6 +45,7 @@ const experiences = [
     ],
     tech: ["Angular", "Chrome Extensions", "TypeScript"],
     color: "border-l-ocean-mid",
+    projectUrl: "https://knowmax.ai/",
   },
   {
     role: "Internship Trainee",
@@ -89,7 +92,20 @@ const ExperienceSection = () => {
                 </span>
               </div>
 
-              <p className="font-body text-sm font-semibold text-primary mb-3">{exp.project}</p>
+              <div className="mb-3 flex flex-wrap items-center justify-between gap-3">
+                <p className="font-body text-sm font-semibold text-primary">{exp.project}</p>
+                {exp.projectUrl && (
+                  <a
+                    href={exp.projectUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center gap-1 rounded-md bg-primary px-3 py-1.5 text-xs font-semibold text-primary-foreground transition-opacity hover:opacity-90"
+                  >
+                    Open Preview
+                    <ExternalLink className="h-3.5 w-3.5" />
+                  </a>
+                )}
+              </div>
 
               <ul className="space-y-2 mb-4">
                 {exp.highlights.map((h, i) => (
