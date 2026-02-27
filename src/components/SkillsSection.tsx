@@ -11,6 +11,8 @@ type SkillCategory = {
   items: SkillItem[];
 };
 
+const iconUrl = (fileName: string) => `${import.meta.env.BASE_URL}techicons/${fileName}`;
+
 const SkillIcon = ({
   item,
   delay,
@@ -73,25 +75,25 @@ const skillCategories: SkillCategory[] = [
   {
     title: "Frontend",
     items: [
-      { label: "React", iconPath: "/techicons/React.svg", glow: "bg-cyan-300/60" },
-      { label: "TypeScript", iconPath: "/techicons/TypeScript.svg", glow: "bg-blue-300/60" },
-      { label: "JavaScript", iconPath: "/techicons/JavaScript.svg", glow: "bg-yellow-300/60" },
-      { label: "CSS3", iconPath: "/techicons/CSS3.svg", glow: "bg-sky-300/60" },
-      { label: "Sass", iconPath: "/techicons/Sass.svg", glow: "bg-pink-300/60" },
-      { label: "Angular", iconPath: "/techicons/Angular.svg", glow: "bg-red-300/60" },
-      { label: "Next.js", iconPath: "/techicons/Next.js.svg", glow: "bg-slate-500/70" },
-      { label: "HTML5", iconPath: "/techicons/HTML5.svg", glow: "bg-orange-300/60" },
+      { label: "React", iconPath: iconUrl("React.svg"), glow: "bg-cyan-300/60" },
+      { label: "TypeScript", iconPath: iconUrl("TypeScript.svg"), glow: "bg-blue-300/60" },
+      { label: "JavaScript", iconPath: iconUrl("JavaScript.svg"), glow: "bg-yellow-300/60" },
+      { label: "CSS3", iconPath: iconUrl("CSS3.svg"), glow: "bg-sky-300/60" },
+      { label: "Sass", iconPath: iconUrl("Sass.svg"), glow: "bg-pink-300/60" },
+      { label: "Angular", iconPath: iconUrl("Angular.svg"), glow: "bg-red-300/60" },
+      { label: "Next.js", iconPath: iconUrl("Next.js.svg"), glow: "bg-slate-500/70" },
+      { label: "HTML5", iconPath: iconUrl("HTML5.svg"), glow: "bg-orange-300/60" },
     ],
   },
   {
     title: "Backend, Data & Runtime",
     items: [
-      { label: "Node.js", iconPath: "/techicons/Node.js.svg", glow: "bg-green-300/60" },
-      { label: "PostgreSQL", iconPath: "/techicons/PostgresSQL.svg", glow: "bg-indigo-300/60" },
-      { label: "Docker", iconPath: "/techicons/Docker.svg", glow: "bg-sky-300/60" },
-      { label: "Git", iconPath: "/techicons/Git.svg", glow: "bg-orange-300/60" },
-      { label: "Electron", iconPath: "/techicons/Electron.svg", glow: "bg-teal-300/60" },
-      { label: "C++", iconPath: "/techicons/C++ (CPlusPlus).svg", glow: "bg-violet-300/60" },
+      { label: "Node.js", iconPath: iconUrl("Node.js.svg"), glow: "bg-green-300/60" },
+      { label: "PostgreSQL", iconPath: iconUrl("PostgresSQL.svg"), glow: "bg-indigo-300/60" },
+      { label: "Docker", iconPath: iconUrl("Docker.svg"), glow: "bg-sky-300/60" },
+      { label: "Git", iconPath: iconUrl("Git.svg"), glow: "bg-orange-300/60" },
+      { label: "Electron", iconPath: iconUrl("Electron.svg"), glow: "bg-teal-300/60" },
+      { label: "C++", iconPath: iconUrl("C++ (CPlusPlus).svg"), glow: "bg-violet-300/60" },
     ],
   },
 ];
